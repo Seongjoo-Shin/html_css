@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            table, th, td {
+              border: 1px solid black;
+            }
+            </style>
+    </head>
+    <body>
+        <h3>링크 태그</h3>
+        <!-- 링크 태그 -->
+        <a href="https://www.w3schools.com">Visit w3schools</a> <br><!-- br : 개행태그-->
+        <a href="https://www.w3schools.com" target="_blank">Visit w3schools</a> <br><!-- target="_blank"는 새로운 탭에서 보기 -->
+        <!-- 절대 경로로 설정 -->
+        <a href="http://localhost:5501/html/exam01_html_structure.html">http://localhost:5501/html/exam01_html_structure.html</a> <br>
+        <!-- 현재 url(localost:5501) 에서 포트 번호 이전까지 생략 -->
+        <a href="/html/exam01_html_structure.html">/html/exam01_html_structure.html</a> <br>
+        <!-- 현재 url에서 상대경로를 이용 -->
+        <a href="exam01_html_structure.html">exam01_html_structure</a> <br>
+        <a href="./exam01_html_structure.html">./exam01_html_structure</a> 
+        
+        <hr/> <!--수평선-->
+        <h3>이미지 태그</h3>
+        <img src="/images/photo1.jpg"/>
+        <img src="/images/photo1.jpg" width="200"/>
+        <img src="/images/photo1.jpg" width="200" height="200"/>
+        <img src="/images/photo20.jpg" alt="Italian Trulli"/>
+
+        <hr/>
+        <h3>제목글 태그</h3>
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
+        
+        <hr/>
+        <h3>문단 태그</h3>
+        <p>This is a paragraph sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss</p>
+        <p>this is another paragraph sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss</p>
+
+        <hr>
+
+        <h3>컨테이너 태그</h3>
+        <div style="background-color: gray;"> <!-- 태그들을 묶어주는 역할 -->
+            <img src="/images/photo1.jpg" width="200"/>
+            <img src="/images/photo1.jpg" width="200" height="200"/>
+            <h4>Heading div</h4>
+        </div>
+        <header style="background-color:gainsboro;"> <!-- 태그들을 묶어주는 역할 -->
+            <img src="/images/photo1.jpg" width="200"/>
+            <img src="/images/photo1.jpg" width="200" height="200"/>
+            <h4>Heading header</h4>
+        </header>
+
+        <article style="background-color:grey;">
+            <img src="/images/photo1.jpg" width="200"/>
+            <img src="/images/photo1.jpg" width="200" height="200"/>
+            <h4>Heading article</h4> 
+        </article>
+        <!-- header, article등은 검색엔진에 영향을 줄 수 있다-->
+
+        <hr>
+
+        <h3>테이블 태그</h3>
+        <table style="width: 100%;">
+            <thead>
+                <tr>
+                    <th>Title1</th>
+                    <th>Title2</th>
+                    <th>Title3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Content1</td>
+                    <td>Content2</td>
+                    <td>Content3</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">
+                        <button>확인</button>
+                        <button>취소</button>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <hr>
+
+        <h3>목록 태그</h3>
+        <ul>
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ul>
+        <ol>
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ol>
+    </body>
+</html><

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        #wrapper {
+            border: 0px;
+        }
+        header{
+            border: 0px;
+        }
+        #banner {
+            width: 100%;
+        }
+
+        #search {
+            width: 70%;
+            padding: 0 20%;
+        }
+
+        #menu {
+            width: 70%;
+            padding: 0 20%;
+            margin-left:17px;
+        }
+        section {
+            width: 70%;
+            padding-left: 20%;
+        }
+
+        #left {
+            float: left;
+            width: 60%;
+            box-sizing: border-box; 
+            /* 이 css를 통해 width에 padding과 border값이 포함된다 */
+        }
+        #promo {
+            margin-left: 30px;
+        }
+
+        #right {
+            float: right;
+            width: 20%;
+            margin-right: 20%;
+            box-sizing: border-box;
+        }
+
+        #footer {
+            width: 70%;
+            padding: 0 30%;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+    <header>
+        <div id="banner"><img src="../layout_images/01.png" /></div>
+        <div id="search"><img src="../layout_images/02.png" /></div>
+        <div id="menu"><img src="../layout_images/03.png" /></div>
+    </header>
+    <section>
+        <nav id="left">
+            <div id="promo"><img src="../layout_images/04.png" /></div>
+            <div><img src="../layout_images/05.png" /></div>
+            <div><img src="../layout_images/06.png" /></div>
+        </nav>
+        <article id="right">
+            <div><img src="../layout_images/07.png" /></div>
+            <div><img src="../layout_images/08.png" /></div>
+            <div><img src="../layout_images/09.png" /></div>
+            <div><img src="../layout_images/10.png" /></div>
+        </article>
+
+    </section>
+    <footer id="footer">
+        <img src="../layout_images/11.png" />
+    </footer>
+    </div>
+</body>
+</html>

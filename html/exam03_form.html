@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#" method="post" novalidate> <!-- novalidate : form이 기본적으로 하는 유효성 검사를 하지 않는다 -->
+        <!-- 기본적으로 form은 데이터 유효성 검사를 한다 -->
+        <!-- form에서 하는 것보다 코드로서 검사하는 것이 더 좋음 -->
+        <div>
+            <!-- label태그 사용 이유 : 특정 태그에 포커스를 주기 위해서-->
+            <label for="userId">User Id : </label>
+            <input id="userId" type="text" name="userId" value="이름"/>
+        </div>
+        <div>
+            <!-- label태그 사용 이유 : 특정 태그에 포커스를 주기 위해서-->
+            <label for="userPassword">User Password : </label>
+            <input id="userPassword" type="password" name="userPassword" placeholder="비밀번호 입력"/>
+        </div>
+        <div>
+            <label>User Skill : </label>
+            <input type="checkbox" name="userSkill" value="java" checked/> java
+            <input type="checkbox" name="userSkill" value="C"/> C
+            <input type="checkbox" name="userSkill" value="C++" /> C++
+            <input type="checkbox" name="userSkill" value="Python" checked/> Python
+            <input type="checkbox" name="userSkill" value="JavaScript"/> JavaScript
+        </div>
+        <div>
+            <label>User Job : </label>
+            <!-- name값이 동일하기 때문에 한가지만 선택 가능 -->
+            <input type="radio" name="userJob" value="개발자" checked/> 개발자
+            <input type="radio" name="userJob" value="디자이너"/> 디자이너
+            <input type="radio" name="userJob" value="설계자"/> 설계자
+        </div>
+        <div>
+            <label>Hire Date : </label>
+            <input type="date" name="userHireDate" value="2000-01-01"/>
+        </div>
+        <div>
+            <label>Age : </label>
+            <!-- min, max범위에 맞지 않으면 제출이 안됨-->
+            <input type="number" name="userAge" min="1" max="150"/>
+        </div>
+        <div>
+            <label>Email : </label>
+            <input type="email" name="userEmail"/>
+        </div>
+        <hr>
+        <div>
+        <!-- 양식의 데이터를 전송(제출) -->
+        <button>제출</button>
+            <input type="submit" value="제출"/>
+            <input type="image" src="/images/button.png" width="50" height="50"/>
+        </div>
+    </form>
+</body>
+</html>
